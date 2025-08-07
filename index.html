@@ -111,49 +111,6 @@
     </style>
 </head>
 <body class="p-4 flex flex-col h-screen">
-  <!-- Login Modal -->
-  <div id="login-modal">
-    <form class="login-container" id="login-form" autocomplete="off">
-      <div class="login-title">USER LOGIN</div>
-      <div class="login-error" id="login-error">Invalid username or password.</div>
-      <div class="input-group">
-        <input type="text" id="username" placeholder="Username" required>
-        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="icon" alt="user icon">
-      </div>
-      <div class="input-group">
-        <input type="password" id="password" placeholder="Password" required>
-        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" class="icon-right" alt="lock icon">
-      </div>
-      <button type="submit" class="login-btn">LOGIN</button>
-    </form>
-  </div>
-
-  <!-- ...existing Bible app HTML code below... -->
-  <div class="main-layout flex flex-col lg:flex-row gap-4 flex-grow justify-center items-center">
-    <!-- ...existing code... -->
-  </div>
-  <!-- ...existing code... -->
-
-  <script>
-    // Simple login logic (replace with real authentication if needed)
-    document.getElementById('login-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const username = document.getElementById('username').value.trim();
-      const password = document.getElementById('password').value.trim();
-      const errorDiv = document.getElementById('login-error');
-      // Example: allow only username "admin" and password "1234"
-      if (username === "admin" && password === "1234") {
-        document.getElementById('login-modal').style.display = 'none';
-      } else {
-        errorDiv.style.display = 'block';
-      }
-    });
-  </script>
-</body>
-</html>
-
-</head>
-<body class="p-4 flex flex-col h-screen">
 
     <div class="main-layout flex flex-col lg:flex-row gap-4 flex-grow justify-center items-center">
 
